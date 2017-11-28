@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5930DB831FC86A97001CF78D /* LookingHotelsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930DB821FC86A97001CF78D /* LookingHotelsVc.swift */; };
+		5930DB871FC86B11001CF78D /* RoomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930DB861FC86B11001CF78D /* RoomsVC.swift */; };
+		5930DB891FC86B6D001CF78D /* CheckIn-OutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930DB881FC86B6D001CF78D /* CheckIn-OutVC.swift */; };
+		5930DB8B1FC870AD001CF78D /* RoomsTblVwCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930DB8A1FC870AD001CF78D /* RoomsTblVwCell.swift */; };
+		5930DB8D1FC88634001CF78D /* AddRoomTblVwCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930DB8C1FC88634001CF78D /* AddRoomTblVwCell.swift */; };
+		5930DB8F1FC8B518001CF78D /* RoomDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930DB8E1FC8B518001CF78D /* RoomDetails.swift */; };
+		594D60151FC9DBCF00A13533 /* DestinationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594D60141FC9DBCF00A13533 /* DestinationVC.swift */; };
+		59A504121FCD2A880052FAC3 /* CustomCollectionLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A504111FCD2A880052FAC3 /* CustomCollectionLayOut.swift */; };
+		59A504141FCD43200052FAC3 /* CustomImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A504131FCD43200052FAC3 /* CustomImageCollectionCell.swift */; };
 		59B6417A1FC84486002C0940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B641791FC84486002C0940 /* AppDelegate.swift */; };
 		59B6417C1FC84486002C0940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B6417B1FC84486002C0940 /* ViewController.swift */; };
 		59B6417F1FC84486002C0940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B6417D1FC84486002C0940 /* Main.storyboard */; };
@@ -14,6 +23,8 @@
 		59B641841FC84486002C0940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B641831FC84486002C0940 /* Assets.xcassets */; };
 		59B641871FC84486002C0940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B641851FC84486002C0940 /* LaunchScreen.storyboard */; };
 		59B641921FC84486002C0940 /* In50hrsProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B641911FC84486002C0940 /* In50hrsProjectTests.swift */; };
+		B493067D34757F87039AE867 /* Pods_In50hrsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0337E5F1FFC2B8AE95761D84 /* Pods_In50hrsProject.framework */; };
+		E5D6B09A3EB7ECB5A994646F /* Pods_In50hrsProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F278792391FF0791872DFF67 /* Pods_In50hrsProjectTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0337E5F1FFC2B8AE95761D84 /* Pods_In50hrsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_In50hrsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		138354968C8E8B08BED927B2 /* Pods-In50hrsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In50hrsProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-In50hrsProject/Pods-In50hrsProject.debug.xcconfig"; sourceTree = "<group>"; };
+		489CC0970DDD0C5AEF0ACF7E /* Pods-In50hrsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In50hrsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-In50hrsProject/Pods-In50hrsProject.release.xcconfig"; sourceTree = "<group>"; };
+		5930DB821FC86A97001CF78D /* LookingHotelsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingHotelsVc.swift; sourceTree = "<group>"; };
+		5930DB861FC86B11001CF78D /* RoomsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsVC.swift; sourceTree = "<group>"; };
+		5930DB881FC86B6D001CF78D /* CheckIn-OutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckIn-OutVC.swift"; sourceTree = "<group>"; };
+		5930DB8A1FC870AD001CF78D /* RoomsTblVwCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsTblVwCell.swift; sourceTree = "<group>"; };
+		5930DB8C1FC88634001CF78D /* AddRoomTblVwCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomTblVwCell.swift; sourceTree = "<group>"; };
+		5930DB8E1FC8B518001CF78D /* RoomDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetails.swift; sourceTree = "<group>"; };
+		594D60141FC9DBCF00A13533 /* DestinationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationVC.swift; sourceTree = "<group>"; };
+		59A504111FCD2A880052FAC3 /* CustomCollectionLayOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionLayOut.swift; sourceTree = "<group>"; };
+		59A504131FCD43200052FAC3 /* CustomImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageCollectionCell.swift; sourceTree = "<group>"; };
 		59B641761FC84486002C0940 /* In50hrsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = In50hrsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B641791FC84486002C0940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B6417B1FC84486002C0940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +61,9 @@
 		59B6418D1FC84486002C0940 /* In50hrsProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = In50hrsProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B641911FC84486002C0940 /* In50hrsProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = In50hrsProjectTests.swift; sourceTree = "<group>"; };
 		59B641931FC84486002C0940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A23AC717A952CF6F1F95DEA /* Pods-In50hrsProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In50hrsProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-In50hrsProjectTests/Pods-In50hrsProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94E1DC4E32C9DEF456F73C03 /* Pods-In50hrsProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In50hrsProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-In50hrsProjectTests/Pods-In50hrsProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		F278792391FF0791872DFF67 /* Pods_In50hrsProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_In50hrsProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B493067D34757F87039AE867 /* Pods_In50hrsProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +79,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D6B09A3EB7ECB5A994646F /* Pods_In50hrsProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37BFFBFF9CEA1D7200119C7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				138354968C8E8B08BED927B2 /* Pods-In50hrsProject.debug.xcconfig */,
+				489CC0970DDD0C5AEF0ACF7E /* Pods-In50hrsProject.release.xcconfig */,
+				5A23AC717A952CF6F1F95DEA /* Pods-In50hrsProjectTests.debug.xcconfig */,
+				94E1DC4E32C9DEF456F73C03 /* Pods-In50hrsProjectTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		59B6416D1FC84486002C0940 = {
 			isa = PBXGroup;
 			children = (
 				59B641781FC84486002C0940 /* In50hrsProject */,
 				59B641901FC84486002C0940 /* In50hrsProjectTests */,
 				59B641771FC84486002C0940 /* Products */,
+				37BFFBFF9CEA1D7200119C7F /* Pods */,
+				AE26BFAC31CCA21B28170188 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +127,15 @@
 				59B641851FC84486002C0940 /* LaunchScreen.storyboard */,
 				59B641881FC84486002C0940 /* Info.plist */,
 				59B641801FC84486002C0940 /* In50hrsProject.xcdatamodeld */,
+				5930DB821FC86A97001CF78D /* LookingHotelsVc.swift */,
+				5930DB861FC86B11001CF78D /* RoomsVC.swift */,
+				5930DB881FC86B6D001CF78D /* CheckIn-OutVC.swift */,
+				5930DB8A1FC870AD001CF78D /* RoomsTblVwCell.swift */,
+				5930DB8C1FC88634001CF78D /* AddRoomTblVwCell.swift */,
+				5930DB8E1FC8B518001CF78D /* RoomDetails.swift */,
+				594D60141FC9DBCF00A13533 /* DestinationVC.swift */,
+				59A504111FCD2A880052FAC3 /* CustomCollectionLayOut.swift */,
+				59A504131FCD43200052FAC3 /* CustomImageCollectionCell.swift */,
 			);
 			path = In50hrsProject;
 			sourceTree = "<group>";
@@ -99,6 +149,15 @@
 			path = In50hrsProjectTests;
 			sourceTree = "<group>";
 		};
+		AE26BFAC31CCA21B28170188 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0337E5F1FFC2B8AE95761D84 /* Pods_In50hrsProject.framework */,
+				F278792391FF0791872DFF67 /* Pods_In50hrsProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59B641961FC84486002C0940 /* Build configuration list for PBXNativeTarget "In50hrsProject" */;
 			buildPhases = (
+				BD04E2EC4148E5B09A9C4F07 /* [CP] Check Pods Manifest.lock */,
 				59B641721FC84486002C0940 /* Sources */,
 				59B641731FC84486002C0940 /* Frameworks */,
 				59B641741FC84486002C0940 /* Resources */,
+				15A50BE16E4587B191A0BE87 /* [CP] Embed Pods Frameworks */,
+				838EE6B587357C1203121960 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59B641991FC84486002C0940 /* Build configuration list for PBXNativeTarget "In50hrsProjectTests" */;
 			buildPhases = (
+				1DBB73098D0302DDF4C1AAB5 /* [CP] Check Pods Manifest.lock */,
 				59B641891FC84486002C0940 /* Sources */,
 				59B6418A1FC84486002C0940 /* Frameworks */,
 				59B6418B1FC84486002C0940 /* Resources */,
+				AB729309437E94E103B621DD /* [CP] Embed Pods Frameworks */,
+				1378ACFB4708CEAF3813F1B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,14 +262,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1378ACFB4708CEAF3813F1B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-In50hrsProjectTests/Pods-In50hrsProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15A50BE16E4587B191A0BE87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-In50hrsProject/Pods-In50hrsProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-In50hrsProject/Pods-In50hrsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DBB73098D0302DDF4C1AAB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-In50hrsProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		838EE6B587357C1203121960 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-In50hrsProject/Pods-In50hrsProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB729309437E94E103B621DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-In50hrsProjectTests/Pods-In50hrsProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD04E2EC4148E5B09A9C4F07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-In50hrsProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		59B641721FC84486002C0940 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				59B641821FC84486002C0940 /* In50hrsProject.xcdatamodeld in Sources */,
+				5930DB871FC86B11001CF78D /* RoomsVC.swift in Sources */,
 				59B6417C1FC84486002C0940 /* ViewController.swift in Sources */,
+				594D60151FC9DBCF00A13533 /* DestinationVC.swift in Sources */,
+				59A504121FCD2A880052FAC3 /* CustomCollectionLayOut.swift in Sources */,
+				5930DB891FC86B6D001CF78D /* CheckIn-OutVC.swift in Sources */,
 				59B6417A1FC84486002C0940 /* AppDelegate.swift in Sources */,
+				5930DB8F1FC8B518001CF78D /* RoomDetails.swift in Sources */,
+				59A504141FCD43200052FAC3 /* CustomImageCollectionCell.swift in Sources */,
+				5930DB8B1FC870AD001CF78D /* RoomsTblVwCell.swift in Sources */,
+				5930DB8D1FC88634001CF78D /* AddRoomTblVwCell.swift in Sources */,
+				5930DB831FC86A97001CF78D /* LookingHotelsVc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +531,7 @@
 		};
 		59B641971FC84486002C0940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138354968C8E8B08BED927B2 /* Pods-In50hrsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +546,7 @@
 		};
 		59B641981FC84486002C0940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 489CC0970DDD0C5AEF0ACF7E /* Pods-In50hrsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +561,7 @@
 		};
 		59B6419A1FC84486002C0940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A23AC717A952CF6F1F95DEA /* Pods-In50hrsProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -399,6 +578,7 @@
 		};
 		59B6419B1FC84486002C0940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E1DC4E32C9DEF456F73C03 /* Pods-In50hrsProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
