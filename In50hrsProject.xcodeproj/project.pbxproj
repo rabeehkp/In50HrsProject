@@ -14,8 +14,8 @@
 		5930DB8D1FC88634001CF78D /* AddRoomTblVwCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930DB8C1FC88634001CF78D /* AddRoomTblVwCell.swift */; };
 		5930DB8F1FC8B518001CF78D /* RoomDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930DB8E1FC8B518001CF78D /* RoomDetails.swift */; };
 		594D60151FC9DBCF00A13533 /* DestinationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594D60141FC9DBCF00A13533 /* DestinationVC.swift */; };
-		59A504121FCD2A880052FAC3 /* CustomCollectionLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A504111FCD2A880052FAC3 /* CustomCollectionLayOut.swift */; };
 		59A504141FCD43200052FAC3 /* CustomImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A504131FCD43200052FAC3 /* CustomImageCollectionCell.swift */; };
+		59A5041A1FCD8B3A0052FAC3 /* CustomLayOutCVL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A504191FCD8B3A0052FAC3 /* CustomLayOutCVL.swift */; };
 		59B6417A1FC84486002C0940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B641791FC84486002C0940 /* AppDelegate.swift */; };
 		59B6417C1FC84486002C0940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B6417B1FC84486002C0940 /* ViewController.swift */; };
 		59B6417F1FC84486002C0940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B6417D1FC84486002C0940 /* Main.storyboard */; };
@@ -48,8 +48,8 @@
 		5930DB8C1FC88634001CF78D /* AddRoomTblVwCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomTblVwCell.swift; sourceTree = "<group>"; };
 		5930DB8E1FC8B518001CF78D /* RoomDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetails.swift; sourceTree = "<group>"; };
 		594D60141FC9DBCF00A13533 /* DestinationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationVC.swift; sourceTree = "<group>"; };
-		59A504111FCD2A880052FAC3 /* CustomCollectionLayOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionLayOut.swift; sourceTree = "<group>"; };
 		59A504131FCD43200052FAC3 /* CustomImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageCollectionCell.swift; sourceTree = "<group>"; };
+		59A504191FCD8B3A0052FAC3 /* CustomLayOutCVL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayOutCVL.swift; sourceTree = "<group>"; };
 		59B641761FC84486002C0940 /* In50hrsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = In50hrsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B641791FC84486002C0940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B6417B1FC84486002C0940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 				5930DB8C1FC88634001CF78D /* AddRoomTblVwCell.swift */,
 				5930DB8E1FC8B518001CF78D /* RoomDetails.swift */,
 				594D60141FC9DBCF00A13533 /* DestinationVC.swift */,
-				59A504111FCD2A880052FAC3 /* CustomCollectionLayOut.swift */,
 				59A504131FCD43200052FAC3 /* CustomImageCollectionCell.swift */,
+				59A504191FCD8B3A0052FAC3 /* CustomLayOutCVL.swift */,
 			);
 			path = In50hrsProject;
 			sourceTree = "<group>";
@@ -373,8 +373,8 @@
 				5930DB871FC86B11001CF78D /* RoomsVC.swift in Sources */,
 				59B6417C1FC84486002C0940 /* ViewController.swift in Sources */,
 				594D60151FC9DBCF00A13533 /* DestinationVC.swift in Sources */,
-				59A504121FCD2A880052FAC3 /* CustomCollectionLayOut.swift in Sources */,
 				5930DB891FC86B6D001CF78D /* CheckIn-OutVC.swift in Sources */,
+				59A5041A1FCD8B3A0052FAC3 /* CustomLayOutCVL.swift in Sources */,
 				59B6417A1FC84486002C0940 /* AppDelegate.swift in Sources */,
 				5930DB8F1FC8B518001CF78D /* RoomDetails.swift in Sources */,
 				59A504141FCD43200052FAC3 /* CustomImageCollectionCell.swift in Sources */,

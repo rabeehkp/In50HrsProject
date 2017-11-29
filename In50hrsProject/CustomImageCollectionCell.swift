@@ -11,7 +11,6 @@ import UIKit
 class CustomImageCollectionCell: UICollectionViewCell {
     //MARK: -Outlets
     @IBOutlet weak var CustomImgCell: UIImageView!
-    @IBOutlet weak var ImgLabel: UILabel!
     
     
 }

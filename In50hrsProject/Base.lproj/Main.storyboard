@@ -19,8 +19,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niC-xr-NCW">
+                                <rect key="frame" x="0.0" y="115" width="375" height="633"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7tZ-BP-1fw">
+                                        <rect key="frame" x="8" y="8" width="359" height="676"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewLayout key="collectionViewLayout" id="aeK-Cf-fNR" customClass="CustomLayOutCVL" customModule="In50hrsProject" customModuleProvider="target"/>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Hotel_Images" id="W4j-kK-gMo" customClass="CustomImageCollectionCell" customModule="In50hrsProject">
+                                                <rect key="frame" x="0.0" y="0.0" width="164" height="174"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="174"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-gU-aNI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="174"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="vZb-gU-aNI" secondAttribute="trailing" id="UK5-AZ-4Ar"/>
+                                                    <constraint firstItem="vZb-gU-aNI" firstAttribute="top" secondItem="W4j-kK-gMo" secondAttribute="top" id="d2W-3r-2GZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vZb-gU-aNI" secondAttribute="bottom" id="nGY-rt-cSs"/>
+                                                    <constraint firstItem="vZb-gU-aNI" firstAttribute="leading" secondItem="W4j-kK-gMo" secondAttribute="leading" id="vZj-bS-7sX"/>
+                                                </constraints>
+                                                <size key="customSize" width="164" height="174"/>
+                                                <connections>
+                                                    <outlet property="CustomImgCell" destination="vZb-gU-aNI" id="pda-Bb-YPA"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="1We-tc-HzZ" id="aBh-Nn-3Sw"/>
+                                            <outlet property="delegate" destination="1We-tc-HzZ" id="a8b-fd-cHp"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7tZ-BP-1fw" secondAttribute="bottom" constant="-51" id="Lc0-XF-80M"/>
+                                    <constraint firstAttribute="trailing" secondItem="7tZ-BP-1fw" secondAttribute="trailing" constant="8" id="exk-5n-Ehv"/>
+                                    <constraint firstItem="7tZ-BP-1fw" firstAttribute="leading" secondItem="niC-xr-NCW" secondAttribute="leading" constant="8" id="m8p-kR-hmt"/>
+                                    <constraint firstItem="7tZ-BP-1fw" firstAttribute="top" secondItem="niC-xr-NCW" secondAttribute="top" constant="8" id="rd3-rt-3KM"/>
+                                </constraints>
+                            </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqx-ye-Sy4">
-                                <rect key="frame" x="0.0" y="16" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="141-af-86W"/>
+                                    <constraint firstAttribute="width" constant="375" id="Uce-uu-NRt"/>
+                                </constraints>
                                 <color key="barTintColor" red="0.095067776739597321" green="0.28685256838798523" blue="0.99348145723342896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,57 +87,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niC-xr-NCW">
-                                <rect key="frame" x="0.0" y="64" width="375" height="684"/>
-                                <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7tZ-BP-1fw">
-                                        <rect key="frame" x="8" y="0.0" width="359" height="684"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewLayout key="collectionViewLayout" id="XxG-kP-Tgg" customClass="CustomCollectionLayOut" customModule="In50hrsProject"/>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Hotel_Images" id="W4j-kK-gMo" customClass="CustomImageCollectionCell" customModule="In50hrsProject">
-                                                <rect key="frame" x="0.0" y="0.0" width="164" height="174"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="174"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hotel1" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-gU-aNI">
-                                                            <rect key="frame" x="5" y="0.0" width="128" height="128"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKU-n4-9Xv">
-                                                            <rect key="frame" x="3" y="134" width="130" height="26"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="26" id="NLF-Ix-7gT"/>
-                                                                <constraint firstAttribute="width" constant="130" id="x6n-PA-hOf"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </view>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="tKU-n4-9Xv" secondAttribute="bottom" constant="14" id="Hb4-Ov-sEV"/>
-                                                    <constraint firstItem="tKU-n4-9Xv" firstAttribute="leading" secondItem="W4j-kK-gMo" secondAttribute="leading" constant="3" id="ogW-T3-uZj"/>
-                                                </constraints>
-                                                <size key="customSize" width="164" height="174"/>
-                                                <connections>
-                                                    <outlet property="CustomImgCell" destination="vZb-gU-aNI" id="pda-Bb-YPA"/>
-                                                    <outlet property="ImgLabel" destination="tKU-n4-9Xv" id="5pm-a4-jfZ"/>
-                                                </connections>
-                                            </collectionViewCell>
-                                        </cells>
-                                        <connections>
-                                            <outlet property="dataSource" destination="1We-tc-HzZ" id="aBh-Nn-3Sw"/>
-                                            <outlet property="delegate" destination="1We-tc-HzZ" id="a8b-fd-cHp"/>
-                                        </connections>
-                                    </collectionView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -95,8 +94,9 @@
                             <constraint firstItem="X35-SB-7rY" firstAttribute="bottom" secondItem="niC-xr-NCW" secondAttribute="bottom" constant="30" id="Oxp-3Z-EVJ"/>
                             <constraint firstItem="niC-xr-NCW" firstAttribute="leading" secondItem="hqx-ye-Sy4" secondAttribute="leading" id="Rlo-Af-Lpa"/>
                             <constraint firstItem="niC-xr-NCW" firstAttribute="trailing" secondItem="hqx-ye-Sy4" secondAttribute="trailing" id="UZb-UC-P7t"/>
-                            <constraint firstItem="niC-xr-NCW" firstAttribute="top" secondItem="hqx-ye-Sy4" secondAttribute="bottom" constant="4" id="bI3-uv-8XS"/>
-                            <constraint firstItem="niC-xr-NCW" firstAttribute="centerY" secondItem="Q2S-Jm-h4H" secondAttribute="centerY" id="hah-os-X5D"/>
+                            <constraint firstItem="niC-xr-NCW" firstAttribute="top" secondItem="hqx-ye-Sy4" secondAttribute="bottom" constant="27" id="bI3-uv-8XS"/>
+                            <constraint firstItem="hqx-ye-Sy4" firstAttribute="top" secondItem="Q2S-Jm-h4H" secondAttribute="top" constant="44" id="dpa-fs-gvW"/>
+                            <constraint firstItem="niC-xr-NCW" firstAttribute="centerY" secondItem="Q2S-Jm-h4H" secondAttribute="centerY" constant="25.5" id="hah-os-X5D"/>
                             <constraint firstItem="niC-xr-NCW" firstAttribute="trailing" secondItem="X35-SB-7rY" secondAttribute="trailing" id="ybf-EA-FPp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X35-SB-7rY"/>
@@ -1012,7 +1012,6 @@
         <image name="Close" width="32" height="32"/>
         <image name="CloseWhite" width="32" height="32"/>
         <image name="Hotel" width="32" height="32"/>
-        <image name="Hotel1" width="560" height="375"/>
         <image name="Image" width="1920" height="1200"/>
         <image name="Img1" width="618" height="800"/>
         <image name="Like" width="32" height="32"/>

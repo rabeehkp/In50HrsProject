@@ -8,20 +8,25 @@
 
 import UIKit
 
-class LookingHotelsVc: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, CollectionLayoutDelegate {
+class LookingHotelsVc: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, CustomLayOutDelegate {
+    
+    
     
     
     //MARK: -Variables
     var imageHight: CGFloat = 0.0
-    var HotelName = ["Hotel1","Hotel2","Hotel3","Hotel4","Hotel5","Hotel6","Hotel7","Hotel8","Hotel9","Hotel10"]
-    var hotelSpecificationImages = [UIImage(named:"Hotel1")]
-    //,UIImage(named:"Hotel2"),UIImage(named:"Hotel3"),UIImage(named:"Hotel4"),UIImage(named:"Hotel5"),UIImage(named:"Hotel6"),UIImage(named:"Hotel7"),UIImage(named:"Hotel8"),UIImage(named:"Hotel9"),UIImage(named:"Hotel10")
-    
+    var hotelName = ["Hotel1","Hotel2","Hotel3","Hotel4","Hotel5","Hotel6","Hotel7","Hotel8","Hotel9","Hotel10"]
+    var hotelSpecificationImages = [UIImage(named:"Hotel1"),UIImage(named:"Hotel2"),UIImage(named:"Hotel3"),UIImage(named:"Hotel4"),UIImage(named:"Hotel5"),UIImage(named:"Hotel6"),UIImage(named:"Hotel7"),UIImage(named:"Hotel8"),UIImage(named:"Hotel9"),UIImage(named:"Hotel10")]
+    var photos = [ #imageLiteral(resourceName: "Hotel1"),#imageLiteral(resourceName: "Hotel2"),#imageLiteral(resourceName: "Hotel3"),#imageLiteral(resourceName: "Hotel4"),#imageLiteral(resourceName: "Hotel5"),#imageLiteral(resourceName: "Hotel6"),#imageLiteral(resourceName: "Hotel7"),#imageLiteral(resourceName: "Hotel8"),#imageLiteral(resourceName: "Hotel9"),#imageLiteral(resourceName: "Hotel10")]
     //MARK: -ViewMethords
     override func viewDidLoad() {
         super.viewDidLoad()
-         let layout = HotelCollectionView?.collectionViewLayout as? CollectionLayoutDelegate
         
+        if let layOut = HotelCollectionView?.collectionViewLayout as? CustomLayOutCVL
+        {
+        layOut.delegate = self
+
+        }
         
         
     }
@@ -46,19 +51,22 @@ class LookingHotelsVc: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = HotelCollectionView.dequeueReusableCell(withReuseIdentifier: "Hotel_Images", for: indexPath) as? CustomImageCollectionCell
-        cell?.CustomImgCell.image = hotelSpecificationImages[indexPath.row]
-        let height = cell?.CustomImgCell.image?.size.height
-        imageHight = height!
-        return cell!
+        cell?.CustomImgCell.image = UIImage(named:hotelName[indexPath.row])
+        cell?.CustomImgCell.contentMode = .scaleAspectFill
+       return cell!
     }
     
-    //CustomLayOut
-    
+    //Mark: -CustmDelegate
+    func collectionView(_ collectionView: UICollectionView, widthForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+        //let random = arc4random_uniform(4)
+        //return CGFloat(70)
+        return photos[indexPath.item].size.width
+    }
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        return imageHight
+        //let random = arc4random_uniform(4)
+        //return CGFloat(70)
+        return photos[indexPath.item].size.height
     }
-    
-    //
     
     
     //MARK: -Action
@@ -68,6 +76,7 @@ class LookingHotelsVc: UIViewController,UICollectionViewDelegate,UICollectionVie
     }
 
 }
+
 
 
 
