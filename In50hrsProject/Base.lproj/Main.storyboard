@@ -20,12 +20,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niC-xr-NCW">
-                                <rect key="frame" x="0.0" y="115" width="375" height="633"/>
+                                <rect key="frame" x="0.0" y="93" width="375" height="655"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7tZ-BP-1fw">
-                                        <rect key="frame" x="8" y="8" width="359" height="676"/>
+                                        <rect key="frame" x="8" y="0.0" width="359" height="684"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewLayout key="collectionViewLayout" id="aeK-Cf-fNR" customClass="CustomLayOutCVL" customModule="In50hrsProject" customModuleProvider="target"/>
+                                        <collectionViewLayout key="collectionViewLayout" id="cdi-mi-Z79" customClass="CustomLayOutCVL" customModule="In50hrsProject"/>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Hotel_Images" id="W4j-kK-gMo" customClass="CustomImageCollectionCell" customModule="In50hrsProject">
                                                 <rect key="frame" x="0.0" y="0.0" width="164" height="174"/>
@@ -59,10 +59,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="7tZ-BP-1fw" secondAttribute="bottom" constant="-51" id="Lc0-XF-80M"/>
+                                    <constraint firstAttribute="bottom" secondItem="7tZ-BP-1fw" secondAttribute="bottom" constant="-29" id="Lc0-XF-80M"/>
                                     <constraint firstAttribute="trailing" secondItem="7tZ-BP-1fw" secondAttribute="trailing" constant="8" id="exk-5n-Ehv"/>
                                     <constraint firstItem="7tZ-BP-1fw" firstAttribute="leading" secondItem="niC-xr-NCW" secondAttribute="leading" constant="8" id="m8p-kR-hmt"/>
-                                    <constraint firstItem="7tZ-BP-1fw" firstAttribute="top" secondItem="niC-xr-NCW" secondAttribute="top" constant="8" id="rd3-rt-3KM"/>
+                                    <constraint firstItem="7tZ-BP-1fw" firstAttribute="top" secondItem="niC-xr-NCW" secondAttribute="top" id="rd3-rt-3KM"/>
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqx-ye-Sy4">
@@ -94,9 +94,9 @@
                             <constraint firstItem="X35-SB-7rY" firstAttribute="bottom" secondItem="niC-xr-NCW" secondAttribute="bottom" constant="30" id="Oxp-3Z-EVJ"/>
                             <constraint firstItem="niC-xr-NCW" firstAttribute="leading" secondItem="hqx-ye-Sy4" secondAttribute="leading" id="Rlo-Af-Lpa"/>
                             <constraint firstItem="niC-xr-NCW" firstAttribute="trailing" secondItem="hqx-ye-Sy4" secondAttribute="trailing" id="UZb-UC-P7t"/>
-                            <constraint firstItem="niC-xr-NCW" firstAttribute="top" secondItem="hqx-ye-Sy4" secondAttribute="bottom" constant="27" id="bI3-uv-8XS"/>
+                            <constraint firstItem="niC-xr-NCW" firstAttribute="top" secondItem="hqx-ye-Sy4" secondAttribute="bottom" constant="5" id="bI3-uv-8XS"/>
                             <constraint firstItem="hqx-ye-Sy4" firstAttribute="top" secondItem="Q2S-Jm-h4H" secondAttribute="top" constant="44" id="dpa-fs-gvW"/>
-                            <constraint firstItem="niC-xr-NCW" firstAttribute="centerY" secondItem="Q2S-Jm-h4H" secondAttribute="centerY" constant="25.5" id="hah-os-X5D"/>
+                            <constraint firstItem="niC-xr-NCW" firstAttribute="centerY" secondItem="Q2S-Jm-h4H" secondAttribute="centerY" constant="14.5" id="hah-os-X5D"/>
                             <constraint firstItem="niC-xr-NCW" firstAttribute="trailing" secondItem="X35-SB-7rY" secondAttribute="trailing" id="ybf-EA-FPp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X35-SB-7rY"/>

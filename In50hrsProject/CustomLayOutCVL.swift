@@ -13,27 +13,30 @@ protocol CustomLayOutDelegate: class {
 }
 class CustomLayOutCVL: UICollectionViewLayout {
     weak var delegate : CustomLayOutDelegate!
+    
     // 2
     fileprivate var numberOfColumns = 1
     fileprivate var cellPadding: CGFloat = 6
     
     // 3
     fileprivate var cache = [UICollectionViewLayoutAttributes]()
-    
     // 4
     fileprivate var contentHeight: CGFloat = 0
     //fileprivate var contentWidth: CGFloat = 0
-    fileprivate var contentWidth: CGFloat {
+    fileprivate var contentWidth: CGFloat = 0
+    var autoWidth : CGFloat {
         guard let collectionView = collectionView else {
             return 0
         }
         let insets = collectionView.contentInset
         return collectionView.bounds.width - (insets.left + insets.right)
     }
-    
     // 5
     override var collectionViewContentSize: CGSize {
         return CGSize(width: contentWidth, height: contentHeight)
+    }
+     var collectionViewScrollDirection: UICollectionViewScrollDirection{
+        return .vertical
     }
     
     override func prepare() {
@@ -43,25 +46,34 @@ class CustomLayOutCVL: UICollectionViewLayout {
         }
         // 2
         //width of image comented
-//        for item in 0 ..< collectionView.numberOfItems(inSection: 0) {
-//
-//            let indexPath = IndexPath(item: item, section: 0)
-//        let photoWidth = delegate.collectionView(collectionView, widthForPhotoAtIndexPath: indexPath)
-//            contentWidth = photoWidth
-//        }
-        
-        let columnWidth = contentWidth / CGFloat(numberOfColumns)
         var xOffset = [CGFloat]()
-        for column in 0 ..< numberOfColumns {
-            xOffset.append(CGFloat(column) * columnWidth)
-        }
+//        for column in 0 ..< numberOfColumns {
+//            xOffset.append(CGFloat(column) * columnWidth)
+//        }
         var column = 0
         var yOffset = [CGFloat](repeating: 0, count: numberOfColumns)
         
-        // 3
+        var ImgWidth : CGFloat = 0
         for item in 0 ..< collectionView.numberOfItems(inSection: 0) {
-            
+
             let indexPath = IndexPath(item: item, section: 0)
+        let photoWidth = delegate.collectionView(collectionView, widthForPhotoAtIndexPath: indexPath)
+           ImgWidth = photoWidth
+           // }
+        if ImgWidth < autoWidth{
+            contentWidth = ImgWidth
+        }
+        else{
+            contentWidth = autoWidth
+        }
+        let columnWidth = contentWidth / CGFloat(numberOfColumns)
+            for column in 0 ..< numberOfColumns {
+                xOffset.append(CGFloat(column) * columnWidth)
+            }
+        // 3
+        //for item in 0 ..< collectionView.numberOfItems(inSection: 0) {
+            
+            //let indexPath = IndexPath(item: item, section: 0)
             
             // 4
             let photoHeight = delegate.collectionView(collectionView, heightForPhotoAtIndexPath: indexPath)
@@ -84,7 +96,6 @@ class CustomLayOutCVL: UICollectionViewLayout {
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         
         var visibleLayoutAttributes = [UICollectionViewLayoutAttributes]()
-        
         // Loop through the cache and look for items in the rect
         for attributes in cache {
             if attributes.frame.intersects(rect) {
